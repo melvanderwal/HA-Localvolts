@@ -3,6 +3,8 @@
 
 <img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Device.png?raw=true" width="200">
 
+<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Flow.png?raw=true" width="500">
+
 ### Steps
 If you don't have Node-RED running in HA yet....
 
