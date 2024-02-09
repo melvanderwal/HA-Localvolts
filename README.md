@@ -13,12 +13,12 @@ If you don't have Node-RED running in HA yet....
 -   Make a little flow and confirm that it's running ok.
 -   There's stuff on the interwebz to help you get started, like [Beginners Guide to Node-RED in Home Assistant](https://www.youtube.com/watch?v=KXcwUdDqXXo&t=1403s).
 
-Import localvolts.json to a new flow in Node-RED.
+Import _localvolts.json_ to a new flow in Node-RED.
 
 -   This will create a new Home Assistant server configuration node, configured for use with the HA Node-RED add-on.  Using a standalone Node-RED instance will require configuring the server node differently.
 -   Hamburger menu > _Import_ > paste the contents of localvolts.json.
 
-Open the Localvolts flow and update the Request Properties node with your:
+Open the _Localvolts_ flow and update the Request Properties node with your:
 -   NMI
 -   Partner ID
 -   API Key
@@ -28,14 +28,16 @@ Don't change _apiKeyFormatted_. Press _Done_ and deploy the flow.  A new device 
 Adjust the display precision of the device's sensors to your preference.
 
 #### Notes
-The forecast is stored in the forecast attribute of the Forecast sensor because the state of a sensor can only hold 255 characters.
+The forecast is stored in the _forecast_ attribute of the _Forecast_ sensor because the state of a sensor can only hold 255 characters.
 
 Prices only refresh when the quality value is not _Forecast_ (i.e. it's _Actual_ or _Expected_).  Once they have refreshed, the Localvolts API will not be called until the current period ends, and then will be checked every 10 seconds until the quality value is no longer Forecast. 
 
 Where a sensor's unit is $, a device class of monetary and unit of USD was used to prevent the preceding _A_ that appears when AUD is used.
 
 #### Manual Price Refresh
-You can manually refresh the prices from Home Assistant hooking a button or tile up to a REST Command to call the GET Refresh Data node. Update the url to one that works with your Node-RED setup.
+You can manually refresh the prices from Home Assistant hooking a button or tile up to a REST Command to call the _GET Refresh Data_ node. Update the url to one that works with your Node-RED setup.
+
+REST Command example:
 ```
 rest_command:
   electricity_refresh_prices:
@@ -43,7 +45,7 @@ rest_command:
     method: GET
 ```
 
-Tile example:
+Tile card example:
 
 ![image](https://github.com/melvanderwal/HA-Localvolts/assets/25993713/0440b2e0-bd03-4f22-81c0-055cfb96dee3)
 
