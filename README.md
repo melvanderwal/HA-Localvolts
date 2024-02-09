@@ -1,5 +1,7 @@
 # Home Assistant - Localvolts
-## Localvolts API integration with Home Assistant using Node-RED Companion.
+## Localvolts API integration with Home Assistant using Node-RED Companion
+
+<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Device.png?raw=true" width="200">
 
 ### Steps
 If you don't have Node-RED running in HA yet....
@@ -11,7 +13,7 @@ If you don't have Node-RED running in HA yet....
 
 Import localvolts.json to a new flow in Node-RED.
 
--   This will create a new Home Assistant server configuration node, configured for use with the HA Node-RED add-on.  Using a standalone Node-RED instance will require a configuring the server node differently.
+-   This will create a new Home Assistant server configuration node, configured for use with the HA Node-RED add-on.  Using a standalone Node-RED instance will require configuring the server node differently.
 -   Hamburger menu > _Import_ > paste the contents of localvolts.json.
 
 Open the Localvolts flow and update the Request Properties node with your:
