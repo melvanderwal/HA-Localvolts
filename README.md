@@ -1,9 +1,9 @@
 # Home Assistant - Localvolts
 ## Localvolts API integration with Home Assistant using Node-RED Companion
 
-<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Device.png?raw=true" width="200">
+<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Device.png?raw=true" width="200" target="_blank">
 
-<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Flow.png?raw=true" width="500">
+<img src="https://github.com/melvanderwal/HA-Localvolts/blob/main/Localvolts_HA_Flow.png?raw=true" width="500" target="_blank">
 
 ### Steps
 If you don't have Node-RED running in HA yet....
