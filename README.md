@@ -15,8 +15,8 @@ If you don't have Node-RED running in HA yet....
 
 Import _localvolts.json_ to a new flow in Node-RED.
 
--   This will create a new Home Assistant server configuration node, configured for use with the HA Node-RED add-on.  Using a standalone Node-RED instance will require configuring the server node differently.
--   Hamburger menu > _Import_ > paste the contents of localvolts.json.
+-   This will create a new Home Assistant server configuration node, configured for use with the HA Node-RED add-on.  Using a standalone Node-RED instance rather than the add-on will require configuring the server node differently.
+-   Hamburger menu > _Import_ > paste the contents of _localvolts.json_.
 
 Open the _Localvolts_ flow and update the _Request Properties_ node with your:
 -   NMI
