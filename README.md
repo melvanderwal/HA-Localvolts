@@ -23,19 +23,19 @@ Open the Localvolts flow and update the Request Properties node with your:
 -   Partner ID
 -   API Key
 
-Don't change apiKeyFormatted. Press _Done_ and deploy the flow.  A new device is added called _Localvolts Prices_.
+Don't change _apiKeyFormatted_. Press _Done_ and deploy the flow.  A new device is added called _Localvolts Prices_.
 
 Adjust the display precision of the device's sensors to your preference.
 
 #### Notes
 The forecast is stored in the forecast attribute of the Forecast sensor because the state of a sensor can only hold 255 characters.
 
-Prices only refresh when the quality value is not Forecast (i.e. it's Actual or Expected).  Once they have refreshed, the Localvolts API will not be called until the current period ends, and then will be checked every 10 seconds until the quality value is no longer Forecast. 
+Prices only refresh when the quality value is not _Forecast_ (i.e. it's _Actual_ or _Expected_).  Once they have refreshed, the Localvolts API will not be called until the current period ends, and then will be checked every 10 seconds until the quality value is no longer Forecast. 
 
 Where a sensor's unit is $, a device class of monetary and unit of USD was used to prevent the preceding _A_ that appears when AUD is used.
 
 #### Manual Price Refresh
-You can manually refresh the prices from Home Assistant hooking a button or tile up to a REST Command to call the GET Refresh Data node.
+You can manually refresh the prices from Home Assistant hooking a button or tile up to a REST Command to call the GET Refresh Data node. Update the url to one that works with your Node-RED setup.
 ```
 rest_command:
   electricity_refresh_prices:
